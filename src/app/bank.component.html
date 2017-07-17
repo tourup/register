@@ -1,0 +1,37 @@
+<div class="full-page">
+    <mz-card color="warm" class="header">
+        <mz-card-title>
+            {{title}}
+        </mz-card-title>
+    </mz-card>
+
+    <div class="all-inputs">
+        <div class="container-ele2">
+            <mz-input-container class="inputs"> 
+                <input mz-input        
+                    [required]="true"
+                    [label]="'Savings Account Number'"
+                    type="number"
+                    id="savings-account"
+                    #savings>
+            </mz-input-container> 
+        </div>
+
+        <div class="container-ele2">
+            <mz-input-container class="inputs"> 
+                <input mz-input 
+                    required       
+                    [label]="'Routing Number'"
+                    type="number"
+                    id="routing-number"
+                    #routing>
+            </mz-input-container> 
+        </div>
+
+    <button mz-button 
+        [large]= 'true'
+        class="green-buttons register-button"
+        (click)="register(savings.value, routing.value)">Register
+    </button>
+ <!-- <router-outlet></router-outlet>-->
+</div>

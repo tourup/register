@@ -1,0 +1,111 @@
+<div class="full-page">
+    <mz-card color="warm" class="header">
+        <mz-card-title>
+            {{title}}
+        </mz-card-title>
+    </mz-card>
+
+    <div class="all-inputs">
+        <div class="container-ele2">
+            <mz-input-container class="inputs"> 
+                <input mz-input        
+                    [label]="'Day'"
+                    type="text"
+                    id="day"
+                    #day>
+            </mz-input-container> 
+
+            <mz-input-container class="inputs"> 
+                <input mz-input        
+                    [label]="'Month'"
+                    type="text"
+                    id="month"
+                    #month>
+            </mz-input-container> 
+
+            <mz-input-container class="inputs"> 
+                <input mz-input        
+                    [label]="'Year'"
+                    type="text"
+                    id="year"
+                    #year>
+            </mz-input-container> 
+        </div>
+
+        <div class="container-ele2">
+            <mz-input-container class="inputs">
+                <input mz-input
+                [label]="'Social Security Number'"    
+                type="number"
+                id="ssn"
+                #ssn>
+            </mz-input-container>
+         </div>
+
+        <div class="container-ele2">
+            <mz-input-container class="inputs">
+                <input mz-input
+                [label]="'Address Line 1'"    
+                type="text"
+                id="addressLine1"
+                #addressLine1>
+            </mz-input-container>  
+        </div>
+
+        <div class="container-ele2">
+            <mz-input-container class="inputs">
+                <input mz-input
+                [label]="'Address Line 2'"
+                type="text"
+                id="addressLine2"
+                #addressLine2>
+            </mz-input-container> 
+        </div>
+
+        <div class="container-ele2">
+            <mz-input-container class="inputs">
+                <input mz-input
+                [label]="'City'"
+                type="text"
+                id="city"
+                #city>
+            </mz-input-container> 
+
+            <mz-input-container class="inputs">
+                <input mz-input
+                [label]="'Zip Code'"
+                type="text"
+                id="zipcode"
+                #zipcode>
+            </mz-input-container> 
+        </div>
+
+        <div class="container-ele2">
+            <mz-input-container class="inputs">
+                <input mz-input
+                [label]="'State'"
+                type="text"
+                id="state"
+                #state>
+            </mz-input-container> 
+
+            <mz-input-container class="inputs">
+                <input mz-input
+                [label]="'Country'"
+                type="text"
+                id="country"
+                #country>
+            </mz-input-container> 
+        </div>
+    </div>
+ 
+    <button mz-button 
+        [large]='true'
+        routerLink="/register/address/bank"
+        class="green-buttons register-button"
+        (click)="addInformation(day.value, month.value, year.value, ssn.value,
+    addressLine1.value, addressLine2.value, city.value,
+    zipcode.value, state.value, country.value)">Register
+    </button> 
+        
+</div>

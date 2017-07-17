@@ -1,0 +1,8 @@
+{
+  "GCLOUD_PROJECT": "tourup-backend",
+  "CLOUD_BUCKET": "websitelogin",
+  "DATA_BACKEND": "datastore",
+  "OAUTH2_CLIENT_ID": " 823674834723-osb8to3vtsimt1bump0eumuoo2bhq21h.apps.googleusercontent.com",
+  "OAUTH2_CLIENT_SECRET": "_H4KR7LTyaW6zPDiUXfCuvwm",
+  "OAUTH2_CALLBACK": "http://localhost:8080/auth/google/callback"
+}
