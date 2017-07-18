@@ -1,17 +1,16 @@
 <div class="app-component-div">
-  <mz-navbar [navbarClass]="'app-component-navbar'">
-    <mz-navbar-item-container [align]="'left'">
+  <md-toolbar class="app-component-navbar">
+    <span>
       <a href="http://tourupapp.com/" >
         <img src="../assets/logo.png" class="brand-logo"
-      style="max-height:64px;"></a>
-    </mz-navbar-item-container>
-  <mz-navbar-item-container [align]="'right'">
-    <mz-navbar-item>
-      <a href="http://tourupapp.com/">
+      style="max-height:64px; margin-top:6px;"></a>
+    </span>
+    <!-- <md-icon href="http://tourupapp.com/" class="home-icon">home</md-icon> -->
+    <!-- <span>
+    <a href="http://tourupapp.com/">
       Home Page
-    </a></mz-navbar-item>
-  </mz-navbar-item-container>
-  </mz-navbar>
-<router-outlet></router-outlet>
-  <!-- <app-register-component></app-register-component> -->
+    </a>
+  </span> -->
+  </md-toolbar>
+  <router-outlet></router-outlet>
 </div>

@@ -1,106 +1,102 @@
+<md-toolbar class="header lower-navbar">
+  <span><h1 class="header">{{title}}</h1></span>
+</md-toolbar>
 <div class="full-page">
-    <mz-card color="warm" class="header">
-        <mz-card-title>
-            {{title}}
-        </mz-card-title>
-    </mz-card>
-
     <div class="all-inputs">
         <div class="container-ele2">
-            <mz-input-container class="inputs"> 
-                <input mz-input        
-                    [label]="'Day'"
+            <md-input-container class="inputs"> 
+                <input mdInput        
+                    placeholder="Day"
                     type="text"
                     id="day"
                     #day>
-            </mz-input-container> 
+            </md-input-container> 
 
-            <mz-input-container class="inputs"> 
-                <input mz-input        
-                    [label]="'Month'"
+            <md-input-container class="inputs"> 
+                <input mdInput        
+                    placeholder="Month"
                     type="text"
                     id="month"
                     #month>
-            </mz-input-container> 
+            </md-input-container> 
 
-            <mz-input-container class="inputs"> 
-                <input mz-input        
-                    [label]="'Year'"
+            <md-input-container class="inputs"> 
+                <input mdInput        
+                    placeholder="Year"
                     type="text"
                     id="year"
                     #year>
-            </mz-input-container> 
+            </md-input-container> 
         </div>
 
         <div class="container-ele2">
-            <mz-input-container class="inputs">
-                <input mz-input
-                [label]="'Social Security Number'"    
+            <md-input-container class="inputs">
+                <input mdInput
+                placeholder="Social Security Number"    
                 type="number"
                 id="ssn"
                 #ssn>
-            </mz-input-container>
+            </md-input-container>
          </div>
 
         <div class="container-ele2">
-            <mz-input-container class="inputs">
-                <input mz-input
-                [label]="'Address Line 1'"    
+            <md-input-container class="inputs">
+                <input mdInput
+                placeholder="Address Line 1"    
                 type="text"
                 id="addressLine1"
                 #addressLine1>
-            </mz-input-container>  
+            </md-input-container>  
         </div>
 
         <div class="container-ele2">
-            <mz-input-container class="inputs">
-                <input mz-input
-                [label]="'Address Line 2'"
+            <md-input-container class="inputs">
+                <input mdInput
+                placeholder="Address Line 2"
                 type="text"
                 id="addressLine2"
                 #addressLine2>
-            </mz-input-container> 
+            </md-input-container> 
         </div>
 
         <div class="container-ele2">
-            <mz-input-container class="inputs">
-                <input mz-input
-                [label]="'City'"
+            <md-input-container class="inputs">
+                <input mdInput
+                placeholder="City"
                 type="text"
                 id="city"
                 #city>
-            </mz-input-container> 
+            </md-input-container> 
 
-            <mz-input-container class="inputs">
-                <input mz-input
-                [label]="'Zip Code'"
+            <md-input-container class="inputs">
+                <input mdInput
+                placeholder="Zip Code"
                 type="text"
                 id="zipcode"
                 #zipcode>
-            </mz-input-container> 
+            </md-input-container> 
         </div>
 
         <div class="container-ele2">
-            <mz-input-container class="inputs">
-                <input mz-input
-                [label]="'State'"
+            <md-input-container class="inputs">
+                <input mdInput
+                placeholder="State"
                 type="text"
                 id="state"
                 #state>
-            </mz-input-container> 
+            </md-input-container> 
 
-            <mz-input-container class="inputs">
-                <input mz-input
-                [label]="'Country'"
+            <md-input-container class="inputs">
+                <input mdInput
+                placeholder="Country"
                 type="text"
                 id="country"
                 #country>
-            </mz-input-container> 
+            </md-input-container> 
         </div>
     </div>
  
-    <button mz-button 
-        [large]='true'
+    <button md-raised-button 
         routerLink="/register/address/bank"
         class="green-buttons register-button"
         (click)="addInformation(day.value, month.value, year.value, ssn.value,
@@ -108,4 +104,4 @@
     zipcode.value, state.value, country.value)">Register
     </button> 
         
-</div>
+</div> 

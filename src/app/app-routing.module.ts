@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { RegisterComponent } from './register.component'
+import { RegisterComponent } from './register.component';
 import { AddressComponent } from './address.component';
 import { BankComponent } from './bank.component';
-import { PageNotFoundComponent } from './not-found.component'
+import { PageNotFoundComponent } from './not-found.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/register', pathMatch: 'full' },

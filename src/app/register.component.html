@@ -1,77 +1,41 @@
+<md-toolbar class="header lower-navbar">
+  <span><h1 class="header">{{title}}</h1></span>
+</md-toolbar>
+
 <div class="full-page">
-    <mz-card color="warm" class="header">
-        <mz-card-title>
-            {{title}}
-        </mz-card-title>
-    </mz-card>
+  <div class="all-inputs">
+    <div class="container-ele2">
+      <md-input-container class="inputs">
+        <input mdInput placeholder="First Name" type="text" id="first_name" #firstName>
+      </md-input-container>
 
-    <div class="all-inputs">
-        <div class="container-ele2">
-            <mz-input-container class="inputs"> 
-                <input mz-input        
-                    [required]="true"
-                    [label]="'First Name'"
-                    type="text"
-                    id="first_name"
-                    #firstName>
-            </mz-input-container> 
-
-            <mz-input-container class="inputs"> 
-                <input mz-input     
-                    [required]="true"   
-                    [label]="'Last Name'"
-                    type="text"
-                    id="last_name"
-                    #lastName>
-            </mz-input-container> 
-        </div>
-
-        <div class="container-ele2">
-            <mz-input-container class="inputs"> 
-                <input mz-input 
-                    required       
-                    [label]="'Email'"
-                    type="email"
-                    id="email"
-                    #email>
-            </mz-input-container> 
-        
-            <mz-input-container class="inputs">
-                <input mz-input
-                [label]="'Phone Number'"    
-                type="number"
-                id="phone_number"
-                #phoneNumber>
-            </mz-input-container>
-         </div>
-
-        <div class="container-ele2">
-            <mz-input-container class="inputs">
-                <input mz-input
-                required
-                [label]="'Password'"    
-                type="password"
-                id="password"
-                #password>
-            </mz-input-container>  
-
-            <mz-input-container class="inputs">
-                <input mz-input
-                required
-                [label]="'Re-enter Password'"
-                type="password"
-                id="repassword"
-                #repassword>
-            </mz-input-container> 
-        </div>
+      <md-input-container class="inputs">
+        <input mdInput placeholder="Last Name" type="text" id="last_name" #lastName>
+      </md-input-container>
     </div>
 
-    <button mz-button 
-        [large]= 'true'
-        routerLink="/register/address"
-        class="green-buttons register-button"
-        (click)="register(firstName.value, lastName.value, email.value,
+    <div class="container-ele2">
+      <md-input-container class="inputs">
+        <input mdInput placeholder="Email" type="email" id="email" #email>
+      </md-input-container>
+
+      <md-input-container class="inputs">
+        <input mdInput placeholder="Phone Number" type="number" id="phone_number" #phoneNumber>
+      </md-input-container>
+    </div>
+
+    <div class="container-ele2">
+      <md-input-container class="inputs">
+        <input mdInput placeholder="Password" type="password" id="password" #password>
+      </md-input-container>
+
+      <md-input-container class="inputs">
+        <input mdInput placeholder="Re-enter Password" type="password" id="repassword" #repassword>
+      </md-input-container>
+    </div>
+  </div>
+
+  <button md-raised-button routerLink="/register/address" class="green-buttons register-button" (click)="register(firstName.value, lastName.value, email.value,
         phoneNumber.value, password.value, repassword.value)">Register
     </button>
- <!-- <router-outlet></router-outlet>-->
 </div>

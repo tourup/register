@@ -1,6 +1,6 @@
-.full-page{
-  margin: 0% 10% 5% 10%;
-  padding: 5% 10% 0% 10%;
+  .full-page{
+  margin: 0% 8% 5% 8%;
+  padding: 5% 8% 0% 8%;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -8,6 +8,7 @@
 
 .header{
   text-align: center;
+  color: white;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -19,7 +20,7 @@
 }
 
 .all-inputs{
-  margin: 1% 5% 1% 5%;
+  margin: 1% 5% 3% 5%;
   padding: 1% 5% 1% 5%;
   align-content: center;
   align-items: stretch;
@@ -44,14 +45,24 @@
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.main-navbar{
-  background-color: #2980b9;
-}
-
-.app-component-div{
-  /* background-image: url("../assets/background.jpg"); */
+.lower-navbar{
+  background-color: #1E88E5;
+  margin: 0px -8px 0px -8px;
+  padding-bottom: -1px;
+  padding-top: -1px;
+  width: 120%;
 }
 
 .app-component-navbar{
-  background-color: #2980b9;
+  background-color: #1976D2;
+  margin: -8px -8px 0px -8px;
+  width: 120%;
+}  
+
+body{
+  margin: 0px !important;
+}
+
+.home-icon{
+  color: white;
 }

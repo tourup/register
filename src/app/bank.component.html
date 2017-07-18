@@ -1,37 +1,32 @@
+<md-toolbar class="header lower-navbar">
+  <span><h1 class="header">{{title}}</h1></span>
+</md-toolbar>
 <div class="full-page">
-    <mz-card color="warm" class="header">
-        <mz-card-title>
-            {{title}}
-        </mz-card-title>
-    </mz-card>
-
     <div class="all-inputs">
         <div class="container-ele2">
-            <mz-input-container class="inputs"> 
-                <input mz-input        
-                    [required]="true"
-                    [label]="'Savings Account Number'"
+            <md-input-container class="inputs"> 
+                <input mdInput        
+                    placeholder="Savings Account Number"
                     type="number"
                     id="savings-account"
                     #savings>
-            </mz-input-container> 
+            </md-input-container> 
         </div>
 
         <div class="container-ele2">
-            <mz-input-container class="inputs"> 
-                <input mz-input 
+            <md-input-container class="inputs"> 
+                <input mdInput 
                     required       
-                    [label]="'Routing Number'"
+                    placeholder="Routing Number"
                     type="number"
                     id="routing-number"
                     #routing>
-            </mz-input-container> 
+            </md-input-container> 
         </div>
+    </div>
 
-    <button mz-button 
-        [large]= 'true'
+    <button md-raised-button 
         class="green-buttons register-button"
         (click)="register(savings.value, routing.value)">Register
     </button>
- <!-- <router-outlet></router-outlet>-->
-</div>
+</div> 
