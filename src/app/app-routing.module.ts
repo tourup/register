@@ -6,10 +6,9 @@ import { BankComponent } from './bank.component';
 import { PageNotFoundComponent } from './not-found.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/register', pathMatch: 'full' },
-  { path: 'register',  component: RegisterComponent },
-  { path: 'register/address', component: AddressComponent },
-  { path: 'register/address/bank', component: BankComponent },
+  { path: '',  component: RegisterComponent },
+  { path: 'address', component: AddressComponent },
+  { path: 'address/bank', component: BankComponent },
   { path: '**', component: PageNotFoundComponent }
 ];
 
